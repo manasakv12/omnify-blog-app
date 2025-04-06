@@ -8,7 +8,9 @@ const authRoutes = require("./routes/auth");
 const blogRoutes = require("./routes/blogs"); // Make sure this path matches your file name
 
 const app = express();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`🌐 Server running on port ${PORT}`));
+
 
 // Middleware
 app.use(cors());
