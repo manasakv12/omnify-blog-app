@@ -21,7 +21,7 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+      const res = await API.post("/auth/signup", formData);
 
       if (res.status === 201) {
         toast.success("Signup successful! 🎉");
