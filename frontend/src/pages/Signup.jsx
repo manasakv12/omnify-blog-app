@@ -3,6 +3,8 @@ import { TextField, Button, Typography, Box, Stack } from "@mui/material";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import API from "../services/api";
+
 
 function Signup() {
   const [formData, setFormData] = useState({
